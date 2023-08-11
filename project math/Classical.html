@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style1.css">
+    <title>Classical Cryptography</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">   
+            <div class="box_big">
+                <h1>Classical Cryptography - Caesar Cipher</h1>
+               <p>
+                   The Caesar Cipher is one of the simplest encryption techniques in classical cryptography.
+                   It works by shifting each letter in the plaintext by a fixed number of positions down the alphabet. <br>
+                   Enter the text you want to encrypt, the encryption key (shift), and click the "Encrypt" button to see the result.
+               </p>
+               <input id="inputText" placeholder="Enter your text to encrypt"><br>
+               <label for="encryptionKey">Encryption Key (Shift):</label>
+               <input type="number" class="box_input" id="encryptionKey" min="0" max="1000" value=""><br>
+               <button onclick="encrypt()">Encrypt</button>
+               <button class="clean" id="num2" onclick="clean()">Reset</button>  
+               <h6 class="last_text">Encrypted Text: <span id="output"></span></h6>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

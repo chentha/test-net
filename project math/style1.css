@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(5, 5, 40, 0.93);
+    background-image: url(/video-bg.png);
+}
+
+.container .container1{
+    margin: 0 auto;
+    width: 1050px;
+    height: 100%;
+    position: relative;
+}
+
+.box_big{
+    width: 90%;
+    line-height: 32px;
+  }
+
+  .box_big h1 {
+    color: aliceblue;
+    font-family: 'Poppin', sans-serif;
+    font-size: 31px;
+    font-weight:600;
+    position: absolute;
+    top: 30px;
+  }
+
+  .box_big p {
+      color:aliceblue;
+      font-family: 'Poppin', sans-serif;
+      font-size: 19px;
+      margin-top: 100px;
+  }
+
+  #inputText, #encryptedText, #decryptedText {
+      width: 60%;
+      height: 90px;
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 22px;
+      outline: none;
+  }
+
+  label {
+    font-family: 'Poppin', sans-serif;
+      width: 80px;
+      font-size: 20px;
+      color: aliceblue;
+      margin-right: 20px;
+      margin-bottom: 30px;
+  }
+  .box_input{
+    width: 26%;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    outline: none;
+    margin-bottom: 30px;
+  }
+
+  #output {
+      color: #0a8280;
+      font-size: 34px;
+      margin-left: 10px;
+  }
+
+  button {
+      padding: 10px 20px;
+      background-color: #0a7c82;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 15%;
+      height: 48px;
+      margin-right: 10px;
+      margin-bottom: 30px;
+      font-size: 17px;
+  }
+  .last_text{
+    font-size: 24px;
+    font-weight: 500;
+    color:aliceblue;
+    font-family: 'Poppin', sans-serif;
+  }
+  .clean{
+    background-color: rgb(209, 14, 14);
+  }
+
+  
+/* responsive phone size */
+@media only screen and (max-width: 768px){
+    .container{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        height: 750px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(5, 5, 40, 0.93);
+        background-image: url(/video-bg.png);
+    }
+    
+    .container .container1{
+        margin: 0 auto;
+        width: 1050px;
+        height: 100%;
+        position: relative;
+    }
+    
+    .box_big{
+        width: 97%;
+        line-height: 27px;
+      }
+    
+      .box_big h1 {
+        color: aliceblue;
+        font-family: 'Poppin', sans-serif;
+        font-size: 26px;
+        font-weight:600;
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        line-height: 30px;
+      }
+    
+      .box_big p {
+          color:aliceblue;
+          font-family: 'Poppin', sans-serif;
+          font-size: 19px;
+          margin-top: 100px;
+          margin-left: 15px;
+      }
+    
+      #inputText, #encryptedText, #decryptedText {
+          width: 93%;
+          height: 70px;
+          padding: 10px;
+          margin: auto;
+          display: block;
+          margin-top: 15px;
+          font-size: 18px;
+          outline: none;
+      }
+    
+      label {
+        font-family: 'Poppin', sans-serif;
+          width: 80px;
+          font-size: 18px;
+          color: aliceblue;
+          margin-left: 15px;
+          margin-right: 0px;
+          margin-bottom: 0px;
+      }
+      .box_input{
+        width: 93%;
+        height: 55px;
+        font-size: 20px;
+        padding-left: 10px;
+        outline: none;
+        margin-bottom: 30px;
+        margin: auto;
+        display: block;
+        margin-top: 10px;
+      }
+    
+      #output {
+          color: #0a8280;
+          font-size: 24px;
+          font-weight: 500;
+          margin-left: 10px;
+          font-family: 'Poppin', sans-serif;
+      }
+    
+      button {
+          padding: 10px 20px;
+          background-color: #0a7c82;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          width: 35%;
+          height: 48px;
+          margin-left: 15px;
+          margin-right: 10px;
+          margin-bottom: 30px;
+          font-size: 17px;
+          outline: none;
+          transition: 0.2s;
+      }
+      button:hover{
+        filter: brightness(80%);
+        transition: 0.2s;
+      }
+      .last_text{
+        margin-left: 15px;
+        font-size: 20px;
+        font-weight: 500;
+        color:aliceblue;
+        font-family: 'Poppin', sans-serif;
+      }
+      .clean{
+        background-color: rgb(209, 14, 14);
+      }
+}
